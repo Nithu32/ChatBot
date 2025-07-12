@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StudyPal - Your AI Learning Companion</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <div class="logo-container">
+        <div class="logo-icon">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <h1>Study<span>Pal</span></h1>
+      </div>
+      <p class="tagline">Your intelligent learning companion</p>
+    </header>
+
+    <div class="chat-container">
+      <div class="chat-header">
+        <div class="ai-avatar">
+          <div class="avatar-pulse"></div>
+          <i class="fas fa-robot"></i>
+        </div>
+        <div class="ai-info">
+          <h3>StudyPal AI</h3>
+          <p class="status">Online | Study Mode</p>
+        </div>
+      </div>
+
+      <div class="chat-messages" id="chatMessages">
+        <div class="welcome-message">
+          <p>👋 Hello! I'm StudyPal, your AI learning assistant. How can I help you study today?</p>
+        </div>
+      </div>
+
+      <div class="chat-input-container">
+        <div class="typing-indicator" id="typingIndicator">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <input type="text" id="userInput" placeholder="Ask me anything about your studies..." autocomplete="off" />
+        <button id="sendButton">
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="suggestions-container">
+      <p>Try asking:</p>
+      <div class="suggestion-chips">
+        <button class="suggestion-chip">What is Newton's third law?</button>
+        <button class="suggestion-chip">Tips for exam preparation</button>
+        <button class="suggestion-chip">Explain Pythagorean theorem</button>
+        <button class="suggestion-chip">Essay on climate change</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
